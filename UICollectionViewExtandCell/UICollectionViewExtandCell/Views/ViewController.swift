@@ -72,7 +72,7 @@ final class ViewController: UIViewController {
         datas = [
             PopularSearch(
                 isExpand: false,
-                title: "실시간 인기 검색",
+                title: "인기 검색",
                 terms: ["캠핑", "가방", "고양이", "건전지", "오미자"]
             ),
             PopularSearch(
@@ -82,8 +82,8 @@ final class ViewController: UIViewController {
             ),
             PopularSearch(
                 isExpand: false,
-                title: "최근 검색",
-                terms: ["충전기", "강아지", "개구리", "두꺼비", "아이유"]
+                title: "연관 검색",
+                terms: ["보충제", "고구마", "헬스장", "런닝머신", "다이어트"]
             )
         ]
     }
@@ -111,9 +111,15 @@ extension ViewController: UICollectionViewDataSource {
             let cell: PopularSearchTitleCell = collectionView.dequeueReusableCell(withReuseIdentifier: PopularSearchTitleCell.description, for: indexPath) as! PopularSearchTitleCell
             
             if datas[indexPath.section].isExpand == true {
-                cell.bind(title: datas[indexPath.section].title)
+                cell.bind(
+                    isExpand: datas[indexPath.section].isExpand,
+                    title: datas[indexPath.section].title
+                )
             } else {
-                cell.bind(title: datas[indexPath.section].terms[0])
+                cell.bind(
+                    isExpand: datas[indexPath.section].isExpand,
+                    title: datas[indexPath.section].terms[0]
+                )
             }
             return cell
         default:

@@ -31,13 +31,6 @@ final class PopularSearchTitleCell: BaseCollectionViewCell {
     
     private let dividerView = DividerView()
     
-    // MARK: - Life Cycle
-    
-//    override func prepareForReuse() {
-//        super.prepareForReuse()
-//
-//    }
-    
     // MARK: - Initialization
     
     override func setupViews() {
@@ -69,15 +62,8 @@ final class PopularSearchTitleCell: BaseCollectionViewCell {
     
     // MARK: - Internal Methods
     
-    func bind(title: String) {
+    func bind(isExpand: Bool, title: String) {
+        expandAndCollapseButton.isSelected = isExpand
         titleLabel.text = title
-    }
-    
-    // MARK: - Variables And Properties
-    
-    override var isSelected: Bool {
-        didSet {
-            expandAndCollapseButton.isSelected = isSelected
-        }
     }
 }
