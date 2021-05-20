@@ -6,6 +6,8 @@ target 'UICollectionViewExtandCell' do
   use_frameworks!
 
   # Pods for UICollectionViewExtandCell
+  pod 'SnapKit'
+  pod 'Then'
 
   target 'UICollectionViewExtandCellTests' do
     inherit! :search_paths
