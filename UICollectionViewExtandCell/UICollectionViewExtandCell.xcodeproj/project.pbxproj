@@ -20,6 +20,10 @@
 		0973F8142656AD260010A5E4 /* PopularSearchTermCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973F8132656AD260010A5E4 /* PopularSearchTermCell.swift */; };
 		0973F8192656AD3F0010A5E4 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973F8182656AD3F0010A5E4 /* BaseCollectionViewCell.swift */; };
 		0973F81F2656AD620010A5E4 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973F81E2656AD620010A5E4 /* BaseView.swift */; };
+		0973F8302656B4310010A5E4 /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973F82F2656B4300010A5E4 /* DividerView.swift */; };
+		0973F8362656B46C0010A5E4 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973F8352656B46C0010A5E4 /* NSObject.swift */; };
+		0973F83B2656B8ED0010A5E4 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973F83A2656B8ED0010A5E4 /* UIView.swift */; };
+		0973F8442656BB1A0010A5E4 /* PopularSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973F8432656BB1A0010A5E4 /* PopularSearch.swift */; };
 		38A439CCBABFFCAEB832CAAC /* Pods_UICollectionViewExtandCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D1F3FED8D7BA4D0DAF3F25 /* Pods_UICollectionViewExtandCell.framework */; };
 		743F0B8A247CFE99D2087435 /* Pods_UICollectionViewExtandCellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA6FFCB81945FB592FB6AF6 /* Pods_UICollectionViewExtandCellTests.framework */; };
 		FC3AED49744F284756F6CC73 /* Pods_UICollectionViewExtandCell_UICollectionViewExtandCellUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A357A2ECB2BE2C59F9B3F4B4 /* Pods_UICollectionViewExtandCell_UICollectionViewExtandCellUITests.framework */; };
@@ -62,6 +66,10 @@
 		0973F8132656AD260010A5E4 /* PopularSearchTermCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSearchTermCell.swift; sourceTree = "<group>"; };
 		0973F8182656AD3F0010A5E4 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		0973F81E2656AD620010A5E4 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		0973F82F2656B4300010A5E4 /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		0973F8352656B46C0010A5E4 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		0973F83A2656B8ED0010A5E4 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		0973F8432656BB1A0010A5E4 /* PopularSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSearch.swift; sourceTree = "<group>"; };
 		31D1F3FED8D7BA4D0DAF3F25 /* Pods_UICollectionViewExtandCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UICollectionViewExtandCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF253C1C3F9DA7210489D0A /* Pods-UICollectionViewExtandCell-UICollectionViewExtandCellUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewExtandCell-UICollectionViewExtandCellUITests.debug.xcconfig"; path = "Target Support Files/Pods-UICollectionViewExtandCell-UICollectionViewExtandCellUITests/Pods-UICollectionViewExtandCell-UICollectionViewExtandCellUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		606131BB6EB5CEFED97C5DD3 /* Pods-UICollectionViewExtandCell-UICollectionViewExtandCellUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewExtandCell-UICollectionViewExtandCellUITests.release.xcconfig"; path = "Target Support Files/Pods-UICollectionViewExtandCell-UICollectionViewExtandCellUITests/Pods-UICollectionViewExtandCell-UICollectionViewExtandCellUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,17 +134,15 @@
 		0973F7C926569C640010A5E4 /* UICollectionViewExtandCell */ = {
 			isa = PBXGroup;
 			children = (
+				0973F8402656B9D40010A5E4 /* Application */,
+				0973F8342656B44C0010A5E4 /* Extensions */,
+				0973F82B2656B4060010A5E4 /* Commons */,
 				0973F81D2656AD4D0010A5E4 /* Bases */,
-				0973F7CA26569C640010A5E4 /* AppDelegate.swift */,
-				0973F7CC26569C640010A5E4 /* SceneDelegate.swift */,
-				0973F7CE26569C640010A5E4 /* ViewController.swift */,
-				0973F7D026569C640010A5E4 /* Main.storyboard */,
-				0973F7D626569C670010A5E4 /* Assets.xcassets */,
-				0973F7D826569C670010A5E4 /* LaunchScreen.storyboard */,
-				0973F7DB26569C670010A5E4 /* Info.plist */,
-				0973F7D326569C640010A5E4 /* UICollectionViewExtandCell.xcdatamodeld */,
-				0973F80E2656AD110010A5E4 /* PopularSearchTitleCell.swift */,
-				0973F8132656AD260010A5E4 /* PopularSearchTermCell.swift */,
+				0973F8422656BB0B0010A5E4 /* Models */,
+				0973F84C2656BBA80010A5E4 /* Views */,
+				0973F83F2656B9AB0010A5E4 /* Storyboards */,
+				0973F84B2656BB7E0010A5E4 /* Resources */,
+				0973F8412656BAA90010A5E4 /* Supporting Files */,
 			);
 			path = UICollectionViewExtandCell;
 			sourceTree = "<group>";
@@ -166,6 +172,76 @@
 				0973F81E2656AD620010A5E4 /* BaseView.swift */,
 			);
 			path = Bases;
+			sourceTree = "<group>";
+		};
+		0973F82B2656B4060010A5E4 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				0973F82F2656B4300010A5E4 /* DividerView.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		0973F8342656B44C0010A5E4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0973F8352656B46C0010A5E4 /* NSObject.swift */,
+				0973F83A2656B8ED0010A5E4 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0973F83F2656B9AB0010A5E4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0973F7D826569C670010A5E4 /* LaunchScreen.storyboard */,
+				0973F7D026569C640010A5E4 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0973F8402656B9D40010A5E4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0973F7CA26569C640010A5E4 /* AppDelegate.swift */,
+				0973F7CC26569C640010A5E4 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0973F8412656BAA90010A5E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0973F7DB26569C670010A5E4 /* Info.plist */,
+				0973F7D326569C640010A5E4 /* UICollectionViewExtandCell.xcdatamodeld */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0973F8422656BB0B0010A5E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0973F8432656BB1A0010A5E4 /* PopularSearch.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0973F84B2656BB7E0010A5E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0973F7D626569C670010A5E4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0973F84C2656BBA80010A5E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0973F7CE26569C640010A5E4 /* ViewController.swift */,
+				0973F80E2656AD110010A5E4 /* PopularSearchTitleCell.swift */,
+				0973F8132656AD260010A5E4 /* PopularSearchTermCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		533CF65C5B4740E047F2FE9F /* Pods */ = {
@@ -430,11 +506,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0973F7D526569C640010A5E4 /* UICollectionViewExtandCell.xcdatamodeld in Sources */,
+				0973F8302656B4310010A5E4 /* DividerView.swift in Sources */,
+				0973F83B2656B8ED0010A5E4 /* UIView.swift in Sources */,
 				0973F8192656AD3F0010A5E4 /* BaseCollectionViewCell.swift in Sources */,
 				0973F7CF26569C640010A5E4 /* ViewController.swift in Sources */,
 				0973F80F2656AD110010A5E4 /* PopularSearchTitleCell.swift in Sources */,
 				0973F7CB26569C640010A5E4 /* AppDelegate.swift in Sources */,
+				0973F8442656BB1A0010A5E4 /* PopularSearch.swift in Sources */,
 				0973F7CD26569C640010A5E4 /* SceneDelegate.swift in Sources */,
+				0973F8362656B46C0010A5E4 /* NSObject.swift in Sources */,
 				0973F8142656AD260010A5E4 /* PopularSearchTermCell.swift in Sources */,
 				0973F81F2656AD620010A5E4 /* BaseView.swift in Sources */,
 			);
@@ -615,7 +695,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YAHW75YBYW;
-				INFOPLIST_FILE = UICollectionViewExtandCell/Info.plist;
+				INFOPLIST_FILE = "UICollectionViewExtandCell/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -635,7 +715,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YAHW75YBYW;
-				INFOPLIST_FILE = UICollectionViewExtandCell/Info.plist;
+				INFOPLIST_FILE = "UICollectionViewExtandCell/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

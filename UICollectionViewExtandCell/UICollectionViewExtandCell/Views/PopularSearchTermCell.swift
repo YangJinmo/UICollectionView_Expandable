@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PopularSearchTermCell: BaseCollectionViewCell {
+final class PopularSearchTermCell: BaseCollectionViewCell {
     
     // MARK: - UI
     

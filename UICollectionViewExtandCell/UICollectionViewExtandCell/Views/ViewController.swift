@@ -9,13 +9,7 @@ import UIKit
 import Then
 import SnapKit
 
-struct PopularSearch {
-    var isExpand = Bool()
-    var title = String()
-    var terms = [String]()
-}
-
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
     // MARK: - Constants
     

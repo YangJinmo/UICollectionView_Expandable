@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PopularSearchTitleCell: BaseCollectionViewCell {
+final class PopularSearchTitleCell: BaseCollectionViewCell {
     
     // MARK: - Private Constants
     
