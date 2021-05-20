@@ -50,8 +50,8 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bind()
         configure()
+        createDummyDatas()
     }
     
     // MARK: - Private Methods
@@ -68,7 +68,7 @@ final class ViewController: UIViewController {
         collectionView.delegate = self
     }
     
-    private func bind() {
+    private func createDummyDatas() {
         datas = [
             PopularSearch(
                 isExpand: false,
