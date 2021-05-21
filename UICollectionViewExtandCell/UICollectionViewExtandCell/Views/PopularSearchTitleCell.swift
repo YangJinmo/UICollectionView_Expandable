@@ -40,7 +40,7 @@ final class PopularSearchTitleCell: BaseCollectionViewCell {
     // MARK: - Private Methods
     
     private func configure() {
-        addSubviews(
+        contentView.addSubviews(
             titleLabel,
             dividerView,
             expandAndCollapseButton

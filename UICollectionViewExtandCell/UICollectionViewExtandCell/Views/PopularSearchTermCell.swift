@@ -30,7 +30,7 @@ final class PopularSearchTermCell: BaseCollectionViewCell {
     // MARK: - Private Methods
     
     private func configure() {
-        addSubviews(
+        contentView.addSubviews(
             rankLabel,
             titleLabel
         )

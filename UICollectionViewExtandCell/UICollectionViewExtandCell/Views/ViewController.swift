@@ -43,7 +43,7 @@ final class ViewController: UIViewController {
         $0.register(PopularSearchTermCell.self, forCellWithReuseIdentifier: PopularSearchTermCell.description)
     }
     
-    var datas = [PopularSearch]()
+    private var datas = [PopularSearch]()
     
     // MARK: - Life Cycle
     
