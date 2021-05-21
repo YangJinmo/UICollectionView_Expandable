@@ -110,17 +110,18 @@ extension ViewController: UICollectionViewDataSource {
         case 0:
             let cell: PopularSearchTitleCell = collectionView.dequeueReusableCell(withReuseIdentifier: PopularSearchTitleCell.description, for: indexPath) as! PopularSearchTitleCell
             
-            if datas[indexPath.section].isExpand == true {
-                cell.bind(
-                    isExpand: datas[indexPath.section].isExpand,
-                    title: datas[indexPath.section].title
-                )
-            } else {
-                cell.bind(
-                    isExpand: datas[indexPath.section].isExpand,
-                    title: datas[indexPath.section].terms[0]
-                )
-            }
+//            if datas[indexPath.section].isExpand == true {
+//                cell.bind(
+//                    isExpand: datas[indexPath.section].isExpand,
+//                    title: datas[indexPath.section].title
+//                )
+//            } else {
+//                cell.bind(
+//                    isExpand: datas[indexPath.section].isExpand,
+//                    title: datas[indexPath.section].terms[0]
+//                )
+//            }
+            cell.bind(data: datas[indexPath.section])
             return cell
         default:
             let cell: PopularSearchTermCell = collectionView.dequeueReusableCell(withReuseIdentifier: PopularSearchTermCell.description, for: indexPath) as! PopularSearchTermCell

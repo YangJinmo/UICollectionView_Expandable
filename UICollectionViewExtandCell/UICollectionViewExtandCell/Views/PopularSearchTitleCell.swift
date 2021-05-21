@@ -23,6 +23,11 @@ final class PopularSearchTitleCell: BaseCollectionViewCell {
         $0.textColor = .label
     }
     
+    private let termLabel = UILabel().then {
+        $0.font = .systemFont(ofSize: 16, weight: .bold)
+        $0.textColor = .label
+    }
+    
     private let expandAndCollapseButton = UIButton().then {
         $0.setImage(Image.expandImage, for: .normal)
         $0.setImage(Image.collapseImage, for: .selected)
@@ -30,6 +35,10 @@ final class PopularSearchTitleCell: BaseCollectionViewCell {
     }
     
     private let dividerView = DividerView()
+    
+    private var second: Int = 0
+    private var timer: Timer = Timer()
+    private var isTimerOn: Bool = false
     
     // MARK: - Initialization
     
@@ -42,11 +51,17 @@ final class PopularSearchTitleCell: BaseCollectionViewCell {
     private func configure() {
         contentView.addSubviews(
             titleLabel,
+            termLabel,
             dividerView,
             expandAndCollapseButton
         )
         
         titleLabel.snp.makeConstraints {
+            $0.centerY.equalToSuperview()
+            $0.left.equalToSuperview().inset(20)
+        }
+        
+        termLabel.snp.makeConstraints {
             $0.center.equalToSuperview()
         }
         
@@ -62,8 +77,31 @@ final class PopularSearchTitleCell: BaseCollectionViewCell {
     
     // MARK: - Internal Methods
     
-    func bind(isExpand: Bool, title: String) {
-        expandAndCollapseButton.isSelected = isExpand
-        titleLabel.text = title
+    func bind(data: PopularSearch) {
+        expandAndCollapseButton.isSelected = data.isExpand
+        titleLabel.text = data.title
+        titleLabel.isHidden = data.isExpand
+        
+        if data.isExpand == true {
+            timer.invalidate()
+            second = 0
+            isTimerOn = false
+            termLabel.text = data.title
+        } else {
+            if isTimerOn == false {
+                isTimerOn = true
+                timer = Timer.scheduledTimer(
+                    withTimeInterval: 1,
+                    repeats: true,
+                    block: { _ in
+                        self.termLabel.text = "\(self.second + 1). \(data.terms[self.second])"
+                        self.second += 1
+                        if self.second == data.terms.count {
+                            self.second = 0
+                        }
+                    }
+                )
+            }
+        }
     }
 }
