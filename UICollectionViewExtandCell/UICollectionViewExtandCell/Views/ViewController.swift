@@ -135,6 +135,8 @@ extension ViewController: UICollectionViewDelegate {
             
             let sections = IndexSet(integer: indexPath.section)
             collectionView.reloadSections(sections)
+        } else {
+            print(datas[indexPath.section].terms[indexPath.item - 1])
         }
     }
 }
