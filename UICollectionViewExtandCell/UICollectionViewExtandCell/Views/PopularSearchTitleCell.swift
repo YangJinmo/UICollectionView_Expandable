@@ -36,9 +36,9 @@ final class PopularSearchTitleCell: BaseCollectionViewCell {
     
     private let dividerView = DividerView()
     
-    private var second: Int = 0
     private var timer: Timer = Timer()
     private var isTimerOn: Bool = false
+    private var index: Int = 0
     
     // MARK: - Initialization
     
@@ -84,20 +84,20 @@ final class PopularSearchTitleCell: BaseCollectionViewCell {
         
         if data.isExpand == true {
             timer.invalidate()
-            second = 0
+            index = 0
             isTimerOn = false
             termLabel.text = data.title
         } else {
             if isTimerOn == false {
                 isTimerOn = true
                 timer = Timer.scheduledTimer(
-                    withTimeInterval: 1,
+                    withTimeInterval: 2,
                     repeats: true,
                     block: { _ in
-                        self.termLabel.text = "\(self.second + 1). \(data.terms[self.second])"
-                        self.second += 1
-                        if self.second == data.terms.count {
-                            self.second = 0
+                        self.termLabel.text = "\(self.index + 1). \(data.terms[self.index])"
+                        self.index += 1
+                        if self.index == data.terms.count {
+                            self.index = 0
                         }
                     }
                 )
