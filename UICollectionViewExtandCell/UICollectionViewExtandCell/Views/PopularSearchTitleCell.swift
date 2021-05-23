@@ -88,6 +88,7 @@ final class PopularSearchTitleCell: BaseCollectionViewCell {
             isTimerOn = false
             termLabel.text = data.title
         } else {
+            termLabel.text = "\(index + 1). \(data.terms[index])"
             if isTimerOn == false {
                 isTimerOn = true
                 timer = Timer.scheduledTimer(
