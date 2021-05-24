@@ -26,17 +26,17 @@ final class ViewController: UIViewController {
     
     // MARK: - UI
     
-    private let collectionViewLayout = UICollectionViewFlowLayout().then {
+    private let flowLayout = UICollectionViewFlowLayout().then {
         $0.sectionInset = .init(top: 0, left: Metric.inset, bottom: 0, right: Metric.inset)
         $0.minimumLineSpacing = Metric.lineSpacing
         $0.minimumInteritemSpacing = Metric.interItemSpacing
     }
     
-    private lazy var collectionView = BaseCollectionView(layout: collectionViewLayout).then {
+    private lazy var collectionView = BaseCollectionView(layout: flowLayout).then {
         $0.dataSource = self
         $0.delegate = self
-        $0.register(PopularSearchTitleCell.self, forCellWithReuseIdentifier: PopularSearchTitleCell.description)
-        $0.register(PopularSearchTermCell.self, forCellWithReuseIdentifier: PopularSearchTermCell.description)
+        $0.register(PopularSearchTitleCell.self)
+        $0.register(PopularSearchTermCell.self)
     }
     
     private var datas = [PopularSearch]()
@@ -101,19 +101,22 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch indexPath.item {
         case 0:
-            let cell: PopularSearchTitleCell = collectionView.dequeueReusableCell(withReuseIdentifier: PopularSearchTitleCell.description, for: indexPath) as! PopularSearchTitleCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PopularSearchTitleCell.description, for: indexPath)
             
-            cell.bind(data: datas[indexPath.section])
+            if let cell = cell as? PopularSearchTitleCell {
+                cell.bind(data: datas[indexPath.section])
+            }
             
             return cell
         default:
-            let cell: PopularSearchTermCell = collectionView.dequeueReusableCell(withReuseIdentifier: PopularSearchTermCell.description, for: indexPath) as! PopularSearchTermCell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PopularSearchTermCell.description, for: indexPath)
             
-            cell.bind(
-                rank: indexPath.item,
-                term: datas[indexPath.section].terms[indexPath.item - 1]
-            )
-            
+            if let cell = cell as? PopularSearchTermCell {
+                cell.bind(
+                    rank: indexPath.item,
+                    term: datas[indexPath.section].terms[indexPath.item - 1]
+                )
+            }
             return cell
         }
     }
