@@ -23,7 +23,6 @@
 		0973F8192656AD3F0010A5E4 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973F8182656AD3F0010A5E4 /* BaseCollectionViewCell.swift */; };
 		0973F81F2656AD620010A5E4 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973F81E2656AD620010A5E4 /* BaseView.swift */; };
 		0973F8302656B4310010A5E4 /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973F82F2656B4300010A5E4 /* DividerView.swift */; };
-		0973F8362656B46C0010A5E4 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973F8352656B46C0010A5E4 /* NSObject.swift */; };
 		0973F83B2656B8ED0010A5E4 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973F83A2656B8ED0010A5E4 /* UIView.swift */; };
 		0973F8442656BB1A0010A5E4 /* PopularSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973F8432656BB1A0010A5E4 /* PopularSearch.swift */; };
 		38A439CCBABFFCAEB832CAAC /* Pods_UICollectionViewExtandCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D1F3FED8D7BA4D0DAF3F25 /* Pods_UICollectionViewExtandCell.framework */; };
@@ -71,7 +70,6 @@
 		0973F8182656AD3F0010A5E4 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		0973F81E2656AD620010A5E4 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		0973F82F2656B4300010A5E4 /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
-		0973F8352656B46C0010A5E4 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 		0973F83A2656B8ED0010A5E4 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		0973F8432656BB1A0010A5E4 /* PopularSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularSearch.swift; sourceTree = "<group>"; };
 		31D1F3FED8D7BA4D0DAF3F25 /* Pods_UICollectionViewExtandCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UICollectionViewExtandCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,7 +188,6 @@
 		0973F8342656B44C0010A5E4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				0973F8352656B46C0010A5E4 /* NSObject.swift */,
 				0973F83A2656B8ED0010A5E4 /* UIView.swift */,
 				090F885F265B7C8F0006A36C /* UICollectionView.swift */,
 			);
@@ -522,7 +519,6 @@
 				0973F7CB26569C640010A5E4 /* AppDelegate.swift in Sources */,
 				0973F8442656BB1A0010A5E4 /* PopularSearch.swift in Sources */,
 				0973F7CD26569C640010A5E4 /* SceneDelegate.swift in Sources */,
-				0973F8362656B46C0010A5E4 /* NSObject.swift in Sources */,
 				0973F8142656AD260010A5E4 /* SearchTermCell.swift in Sources */,
 				0973F81F2656AD620010A5E4 /* BaseView.swift in Sources */,
 			);
