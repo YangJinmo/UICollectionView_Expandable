@@ -116,6 +116,9 @@
 		090F8887265C12A20006A36C /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				0973F7CE26569C640010A5E4 /* SearchViewController.swift */,
+				0973F80E2656AD110010A5E4 /* SearchTitleCell.swift */,
+				0973F8132656AD260010A5E4 /* SearchTermCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -259,9 +262,6 @@
 			children = (
 				090F8888265C12B10006A36C /* Common */,
 				090F8887265C12A20006A36C /* Search */,
-				0973F7CE26569C640010A5E4 /* SearchViewController.swift */,
-				0973F80E2656AD110010A5E4 /* SearchTitleCell.swift */,
-				0973F8132656AD260010A5E4 /* SearchTermCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
