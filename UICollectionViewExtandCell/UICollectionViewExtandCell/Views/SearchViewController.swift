@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SearchViewController.swift
 //  UICollectionViewExtandCell
 //
 //  Created by Jmy on 2021/05/20.
@@ -9,7 +9,7 @@ import UIKit
 import Then
 import SnapKit
 
-final class ViewController: UIViewController {
+final class SearchViewController: UIViewController {
     
     // MARK: - Constants
     
@@ -35,8 +35,8 @@ final class ViewController: UIViewController {
     private lazy var collectionView = BaseCollectionView(layout: flowLayout).then {
         $0.dataSource = self
         $0.delegate = self
-        $0.register(PopularSearchTitleCell.self)
-        $0.register(PopularSearchTermCell.self)
+        $0.register(SearchTitleCell.self)
+        $0.register(SearchTermCell.self)
     }
     
     private var datas = [PopularSearch]()
@@ -84,7 +84,7 @@ final class ViewController: UIViewController {
 
 // MARK: - UICollectionViewDataSource
 
-extension ViewController: UICollectionViewDataSource {
+extension SearchViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return datas.count
@@ -101,22 +101,15 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch indexPath.item {
         case 0:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PopularSearchTitleCell.description, for: indexPath)
-            
-            if let cell = cell as? PopularSearchTitleCell {
-                cell.bind(data: datas[indexPath.section])
-            }
-            
+            let cell: SearchTitleCell = collectionView.dequeueReusableCell(for: indexPath)
+            cell.bind(data: datas[indexPath.section])
             return cell
         default:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PopularSearchTermCell.description, for: indexPath)
-            
-            if let cell = cell as? PopularSearchTermCell {
-                cell.bind(
-                    rank: indexPath.item,
-                    term: datas[indexPath.section].terms[indexPath.item - 1]
-                )
-            }
+            let cell: SearchTermCell = collectionView.dequeueReusableCell(for: indexPath)
+            cell.bind(
+                rank: indexPath.item,
+                term: datas[indexPath.section].terms[indexPath.item - 1]
+            )
             return cell
         }
     }
@@ -124,7 +117,7 @@ extension ViewController: UICollectionViewDataSource {
 
 // MARK: - UICollectionViewDelegate
 
-extension ViewController: UICollectionViewDelegate {
+extension SearchViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.item == 0 {
@@ -140,7 +133,7 @@ extension ViewController: UICollectionViewDelegate {
 
 // MARK: - UICollectionViewDelegateFlowLayout
 
-extension ViewController: UICollectionViewDelegateFlowLayout {
+extension SearchViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         switch indexPath.item {

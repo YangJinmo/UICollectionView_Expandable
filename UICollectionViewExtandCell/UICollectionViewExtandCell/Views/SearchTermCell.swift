@@ -1,5 +1,5 @@
 //
-//  PopularSearchTermCell.swift
+//  SearchTermCell.swift
 //  UICollectionViewExtandCell
 //
 //  Created by Jmy on 2021/05/20.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class PopularSearchTermCell: BaseCollectionViewCell {
+final class SearchTermCell: BaseCollectionViewCell {
     
     // MARK: - UI
     
