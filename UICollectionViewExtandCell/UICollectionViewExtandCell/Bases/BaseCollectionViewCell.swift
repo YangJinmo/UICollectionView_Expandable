@@ -9,6 +9,12 @@ import UIKit
 
 class BaseCollectionViewCell: UICollectionViewCell {
     
+    // MARK: - Convenience Initialization
+    
+    convenience init() {
+        self.init(frame: .zero)
+    }
+    
     // MARK: - Initialization
     
     override init(frame: CGRect) {

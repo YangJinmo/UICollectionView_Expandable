@@ -9,11 +9,13 @@ import UIKit
 
 class BaseView: UIView {
     
-    // MARK: - Initialization
+    // MARK: - Convenience Initialization
     
     convenience init() {
         self.init(frame: .zero)
     }
+    
+    // MARK: - Initialization
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -31,4 +33,3 @@ class BaseView: UIView {
         
     }
 }
-
