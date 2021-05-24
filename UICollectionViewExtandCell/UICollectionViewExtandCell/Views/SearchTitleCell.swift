@@ -77,7 +77,7 @@ final class SearchTitleCell: BaseCollectionViewCell {
     
     // MARK: - Internal Methods
     
-    func bind(data: PopularSearch) {
+    func bind(data: Search) {
         expandAndCollapseButton.isSelected = data.isExpand
         titleLabel.text = data.title
         titleLabel.isHidden = data.isExpand
