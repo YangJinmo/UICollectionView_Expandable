@@ -13,7 +13,7 @@ final class ViewController: UIViewController {
     
     // MARK: - Constants
     
-    struct Metric {
+    private struct Metric {
         static let numberOfItemForRow: CGFloat = 1
         static let inset: CGFloat = 20
         static let lineSpacing: CGFloat = 10
@@ -26,19 +26,13 @@ final class ViewController: UIViewController {
     
     // MARK: - UI
     
-    private let collectionViewLayout = UICollectionViewFlowLayout().then {$0.scrollDirection = .vertical
+    private let collectionViewLayout = UICollectionViewFlowLayout().then {
         $0.sectionInset = .init(top: 0, left: Metric.inset, bottom: 0, right: Metric.inset)
         $0.minimumLineSpacing = Metric.lineSpacing
         $0.minimumInteritemSpacing = Metric.interItemSpacing
     }
     
-    private lazy var collectionView = UICollectionView(
-        frame: .zero,
-        collectionViewLayout: collectionViewLayout
-    ).then {
-        $0.backgroundColor = .systemBackground
-        $0.showsVerticalScrollIndicator = false
-        $0.showsHorizontalScrollIndicator = false
+    private lazy var collectionView = BaseCollectionView(layout: collectionViewLayout).then {
         $0.dataSource = self
         $0.delegate = self
         $0.register(PopularSearchTitleCell.self, forCellWithReuseIdentifier: PopularSearchTitleCell.description)

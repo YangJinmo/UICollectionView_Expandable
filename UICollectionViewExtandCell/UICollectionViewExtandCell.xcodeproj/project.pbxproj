@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090F8855265B75260006A36C /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090F8854265B75260006A36C /* BaseCollectionView.swift */; };
 		0973F7CB26569C640010A5E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973F7CA26569C640010A5E4 /* AppDelegate.swift */; };
 		0973F7CD26569C640010A5E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973F7CC26569C640010A5E4 /* SceneDelegate.swift */; };
 		0973F7CF26569C640010A5E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973F7CE26569C640010A5E4 /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		090F8854265B75260006A36C /* BaseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
 		0973F7C726569C640010A5E4 /* UICollectionViewExtandCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICollectionViewExtandCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0973F7CA26569C640010A5E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0973F7CC26569C640010A5E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,8 +170,9 @@
 		0973F81D2656AD4D0010A5E4 /* Bases */ = {
 			isa = PBXGroup;
 			children = (
-				0973F8182656AD3F0010A5E4 /* BaseCollectionViewCell.swift */,
 				0973F81E2656AD620010A5E4 /* BaseView.swift */,
+				090F8854265B75260006A36C /* BaseCollectionView.swift */,
+				0973F8182656AD3F0010A5E4 /* BaseCollectionViewCell.swift */,
 			);
 			path = Bases;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0973F7D526569C640010A5E4 /* UICollectionViewExtandCell.xcdatamodeld in Sources */,
+				090F8855265B75260006A36C /* BaseCollectionView.swift in Sources */,
 				0973F8302656B4310010A5E4 /* DividerView.swift in Sources */,
 				0973F83B2656B8ED0010A5E4 /* UIView.swift in Sources */,
 				0973F8192656AD3F0010A5E4 /* BaseCollectionViewCell.swift in Sources */,
