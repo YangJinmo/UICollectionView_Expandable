@@ -156,13 +156,7 @@
 		0973F7C926569C640010A5E4 /* UICollectionViewExtandCell */ = {
 			isa = PBXGroup;
 			children = (
-				0973F8402656B9D40010A5E4 /* Application */,
-				0973F8342656B44C0010A5E4 /* Extensions */,
-				0973F82B2656B4060010A5E4 /* Commons */,
-				0973F81D2656AD4D0010A5E4 /* Bases */,
-				0973F8422656BB0B0010A5E4 /* Models */,
-				0973F84C2656BBA80010A5E4 /* Views */,
-				0973F83F2656B9AB0010A5E4 /* Storyboards */,
+				097D231B265E5D4B0083608B /* Sources */,
 				0973F84B2656BB7E0010A5E4 /* Resources */,
 				0973F8412656BAA90010A5E4 /* Supporting Files */,
 			);
@@ -214,15 +208,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		0973F83F2656B9AB0010A5E4 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				0973F7D826569C670010A5E4 /* LaunchScreen.storyboard */,
-				0973F7D026569C640010A5E4 /* Main.storyboard */,
-			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
 		0973F8402656B9D40010A5E4 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +237,8 @@
 		0973F84B2656BB7E0010A5E4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0973F7D826569C670010A5E4 /* LaunchScreen.storyboard */,
+				0973F7D026569C640010A5E4 /* Main.storyboard */,
 				0973F7D626569C670010A5E4 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -264,6 +251,19 @@
 				090F8887265C12A20006A36C /* Search */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		097D231B265E5D4B0083608B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0973F8402656B9D40010A5E4 /* Application */,
+				0973F8342656B44C0010A5E4 /* Extensions */,
+				0973F82B2656B4060010A5E4 /* Commons */,
+				0973F81D2656AD4D0010A5E4 /* Bases */,
+				0973F8422656BB0B0010A5E4 /* Models */,
+				0973F84C2656BBA80010A5E4 /* Views */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		533CF65C5B4740E047F2FE9F /* Pods */ = {
