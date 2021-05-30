@@ -27,7 +27,7 @@ final class SearchViewController: UIViewController {
     
     private var searches = [Search]()
     
-    // MARK: - Life Cycle
+    // MARK: - View Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +36,7 @@ final class SearchViewController: UIViewController {
         createDummyDatas()
     }
     
-    // MARK: - UIViewControllerTransitionCoordinator
+    // MARK: - UIViewController Transition Coordinator
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
@@ -141,6 +141,8 @@ extension SearchViewController: UICollectionViewDelegateFlowLayout {
         }
     }
 }
+
+// MARK: - FlowLayoutMetric
 
 extension SearchViewController: FlowLayoutMetric {
     var numberOfItemForRow: CGFloat {
