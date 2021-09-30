@@ -17,4 +17,4 @@
     
 
 
-    [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://drive.google.com/file/d/1BUJG3ZUfJBEcCLXIYEqX8CAm3_i7BOL6/preview)
+    [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/RlQEoJaLQRA/0.jpg)](https://drive.google.com/file/d/1BUJG3ZUfJBEcCLXIYEqX8CAm3_i7BOL6/preview)
