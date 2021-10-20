@@ -12,8 +12,8 @@ final class SearchTitleCell: BaseCollectionViewCell {
     // MARK: - Private Constants
     
     private struct Image {
-        static let expandImage = UIImage(systemName: "chevron.down")
-        static let collapseImage = UIImage(systemName: "chevron.up")
+        static let chevronDownImage = UIImage(systemName: "chevron.down")
+        static let chevronUpImage = UIImage(systemName: "chevron.up")
     }
     
     // MARK: - UI
@@ -28,9 +28,9 @@ final class SearchTitleCell: BaseCollectionViewCell {
         $0.textColor = .label
     }
     
-    private let expandAndCollapseButton = UIButton().then {
-        $0.setImage(Image.expandImage, for: .normal)
-        $0.setImage(Image.collapseImage, for: .selected)
+    private let chevronButton = UIButton().then {
+        $0.setImage(Image.chevronDownImage, for: .normal)
+        $0.setImage(Image.chevronUpImage, for: .selected)
         $0.tintColor = .label
         $0.isUserInteractionEnabled = false
     }
@@ -54,7 +54,7 @@ final class SearchTitleCell: BaseCollectionViewCell {
             titleLabel,
             termLabel,
             dividerView,
-            expandAndCollapseButton
+            chevronButton
         )
         
         titleLabel.snp.makeConstraints {
@@ -70,7 +70,7 @@ final class SearchTitleCell: BaseCollectionViewCell {
             $0.left.right.bottom.equalToSuperview()
         }
         
-        expandAndCollapseButton.snp.makeConstraints {
+        chevronButton.snp.makeConstraints {
             $0.centerY.equalToSuperview()
             $0.right.equalToSuperview().inset(20)
         }
@@ -79,7 +79,7 @@ final class SearchTitleCell: BaseCollectionViewCell {
     // MARK: - Internal Methods
     
     func bind(data: Search) {
-        expandAndCollapseButton.isSelected = data.isExpand
+        chevronButton.isSelected = data.isExpand
         titleLabel.text = data.title
         titleLabel.isHidden = data.isExpand
         
