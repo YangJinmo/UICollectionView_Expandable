@@ -32,6 +32,7 @@ final class SearchTitleCell: BaseCollectionViewCell {
         $0.setImage(Image.expandImage, for: .normal)
         $0.setImage(Image.collapseImage, for: .selected)
         $0.tintColor = .label
+        $0.isUserInteractionEnabled = false
     }
     
     private let dividerView = DividerView()
