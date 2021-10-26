@@ -9,7 +9,7 @@ import UIKit
 
 final class SearchTermCell: BaseCollectionViewCell {
     
-    // MARK: - UI
+    // MARK: - Views
     
     private let rankLabel = UILabel().then {
         $0.font = .systemFont(ofSize: 16, weight: .bold)
@@ -24,12 +24,6 @@ final class SearchTermCell: BaseCollectionViewCell {
     // MARK: - Initialization
     
     override func setupViews() {
-        configure()
-    }
-    
-    // MARK: - Private Methods
-    
-    private func configure() {
         contentView.addSubviews(
             rankLabel,
             titleLabel
@@ -46,7 +40,7 @@ final class SearchTermCell: BaseCollectionViewCell {
         }
     }
     
-    // MARK: - Internal Methods
+    // MARK: - Methods
     
     func bind(rank: Int, term: String) {
         rankLabel.text = "\(rank)"

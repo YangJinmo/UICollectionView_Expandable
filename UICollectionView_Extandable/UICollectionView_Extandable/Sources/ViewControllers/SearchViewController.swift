@@ -16,7 +16,11 @@ final class SearchViewController: UIViewController {
     private let searchTitleCellHeight: CGFloat = 76
     private let searchTermCellHeight: CGFloat = 44
     
-    // MARK: - UI
+    // MARK: - Variables
+    
+    private var searches = [Search]()
+    
+    // MARK: - Views
     
     private lazy var collectionView = BaseCollectionView(layout: flowLayout()).then {
         $0.dataSource = self
@@ -24,8 +28,6 @@ final class SearchViewController: UIViewController {
         $0.register(SearchTitleCell.self)
         $0.register(SearchTermCell.self)
     }
-    
-    private var searches = [Search]()
     
     // MARK: - View Life Cycle
     
@@ -47,7 +49,7 @@ final class SearchViewController: UIViewController {
         flowLayout.invalidateLayout()
     }
     
-    // MARK: - Private Methods
+    // MARK: - Methods
     
     private func configure() {
         view.addSubview(collectionView)

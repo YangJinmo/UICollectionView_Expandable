@@ -9,11 +9,12 @@ import UIKit
 
 class DividerView: BaseView {
     
+    // MARK: - Methods
+    
     override func setupViews() {
         backgroundColor = .secondarySystemBackground
         
-        snp.makeConstraints {
-            $0.height.equalTo(1)
-        }
+        translatesAutoresizingMaskIntoConstraints = false
+        heightAnchor.constraint(equalToConstant: 1).isActive = true
     }
 }

@@ -9,13 +9,11 @@ import UIKit
 
 class BaseCollectionView: UICollectionView {
     
-    // MARK: - Convenience Initialization
+    // MARK: - Initialization
     
     convenience init(layout: UICollectionViewLayout) {
         self.init(frame: .zero, collectionViewLayout: layout)
     }
-    
-    // MARK: - Initialization
     
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)

@@ -1,5 +1,5 @@
 //
-//  BaseCollectionViewCell.swift
+//  BaseView.swift
 //  UICollectionView_Extandable
 //
 //  Created by Jmy on 2021/05/20.
@@ -7,20 +7,17 @@
 
 import UIKit
 
-class BaseCollectionViewCell: UICollectionViewCell {
+class BaseView: UIView {
     
-    // MARK: - Convenience Initialization
+    // MARK: - Initialization
     
     convenience init() {
         self.init(frame: .zero)
     }
     
-    // MARK: - Initialization
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        backgroundColor = .systemBackground
         setupViews()
     }
     
@@ -28,7 +25,7 @@ class BaseCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: - Internal Methods
+    // MARK: - Methods
     
     func setupViews() {
         

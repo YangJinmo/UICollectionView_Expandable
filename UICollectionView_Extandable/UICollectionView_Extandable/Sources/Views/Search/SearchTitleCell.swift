@@ -9,14 +9,14 @@ import UIKit
 
 final class SearchTitleCell: BaseCollectionViewCell {
     
-    // MARK: - Private Constants
+    // MARK: - Constants
     
     private struct Image {
         static let chevronDownImage = UIImage(systemName: "chevron.down")
         static let chevronUpImage = UIImage(systemName: "chevron.up")
     }
     
-    // MARK: - UI
+    // MARK: - Views
     
     private let titleLabel = UILabel().then {
         $0.font = .systemFont(ofSize: 16, weight: .bold)
@@ -44,12 +44,6 @@ final class SearchTitleCell: BaseCollectionViewCell {
     // MARK: - Initialization
     
     override func setupViews() {
-        configure()
-    }
-    
-    // MARK: - Private Methods
-    
-    private func configure() {
         contentView.addSubviews(
             titleLabel,
             termLabel,
@@ -76,7 +70,7 @@ final class SearchTitleCell: BaseCollectionViewCell {
         }
     }
     
-    // MARK: - Internal Methods
+    // MARK: - Methods
     
     func bind(data: Search) {
         chevronButton.isSelected = data.isExpand
