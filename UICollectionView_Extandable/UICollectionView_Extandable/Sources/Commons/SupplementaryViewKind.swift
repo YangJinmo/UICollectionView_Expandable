@@ -8,20 +8,20 @@
 import UIKit
 
 public enum SupplementaryViewKind: String {
-  case header, footer
+    case header, footer
 
-  public init?(rawValue: String) {
-    switch rawValue {
-    case UICollectionView.elementKindSectionHeader: self = .header
-    case UICollectionView.elementKindSectionFooter: self = .footer
-    default: return nil
+    public init?(rawValue: String) {
+        switch rawValue {
+        case UICollectionView.elementKindSectionHeader: self = .header
+        case UICollectionView.elementKindSectionFooter: self = .footer
+        default: return nil
+        }
     }
-  }
 
-  public var rawValue: String {
-    switch self {
-    case .header: return UICollectionView.elementKindSectionHeader
-    case .footer: return UICollectionView.elementKindSectionFooter
+    public var rawValue: String {
+        switch self {
+        case .header: return UICollectionView.elementKindSectionHeader
+        case .footer: return UICollectionView.elementKindSectionFooter
+        }
     }
-  }
 }

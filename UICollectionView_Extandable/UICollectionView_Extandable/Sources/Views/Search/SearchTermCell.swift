@@ -8,42 +8,31 @@
 import UIKit
 
 final class SearchTermCell: BaseCollectionViewCell {
-    
+    // MARK: - Variables
+
+    static var itemHeight: CGFloat {
+        return 44
+    }
+
     // MARK: - Views
-    
-    private let rankLabel = UILabel().then {
+
+    private let rankTermLabel = UILabel().then {
         $0.font = .systemFont(ofSize: 16, weight: .bold)
-        $0.textColor = .label
     }
-    
-    private let titleLabel = UILabel().then {
-        $0.font = .systemFont(ofSize: 16, weight: .regular)
-        $0.textColor = .label
-    }
-    
-    // MARK: - Initialization
-    
+
+    // MARK: - Methods
+
     override func setupViews() {
         contentView.addSubviews(
-            rankLabel,
-            titleLabel
+            rankTermLabel
         )
-        
-        rankLabel.snp.makeConstraints {
-            $0.centerY.equalToSuperview()
-            $0.left.equalToSuperview().inset(20)
-        }
-        
-        titleLabel.snp.makeConstraints {
-            $0.centerY.equalToSuperview()
-            $0.left.equalTo(rankLabel.snp.right).offset(20)
+
+        rankTermLabel.snp.makeConstraints {
+            $0.center.equalToSuperview()
         }
     }
-    
-    // MARK: - Methods
-    
+
     func bind(rank: Int, term: String) {
-        rankLabel.text = "\(rank)"
-        titleLabel.text = term
+        rankTermLabel.text = "\(rank). \(term)"
     }
 }
