@@ -75,6 +75,7 @@ final class SearchTitleCell: BaseCollectionViewCell {
 
     // MARK: - Methods
 
+    // TODO: Add Timer in model
     func bind(data: Search) {
         chevronButton.isSelected = data.isExpand
         titleLabel.text = data.title
