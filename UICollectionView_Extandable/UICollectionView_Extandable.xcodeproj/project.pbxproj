@@ -29,6 +29,7 @@
 		098AD2E327284A6F00289F0E /* SupplementaryViewKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098AD2E227284A6F00289F0E /* SupplementaryViewKind.swift */; };
 		132C633E29EA4FD07938AFB1 /* Pods_UICollectionView_Extandable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B6E4E1FAA5BBD599A96227 /* Pods_UICollectionView_Extandable.framework */; };
 		848167D06523739AA3D603E8 /* Pods_UICollectionView_Extandable_UICollectionView_ExtandableUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF386383F72E87B71C2C0296 /* Pods_UICollectionView_Extandable_UICollectionView_ExtandableUITests.framework */; };
+		E8878C1728617FD500A25E3C /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8878C1628617FD500A25E3C /* Identifiable.swift */; };
 		FBBD2310827228D0CCB128C2 /* Pods_UICollectionView_ExtandableTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0EB0820A52A5DC93FA5B3AD /* Pods_UICollectionView_ExtandableTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		B104D9E8408ADC04CCFE733E /* Pods-UICollectionView_ExtandableTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionView_ExtandableTests.release.xcconfig"; path = "Target Support Files/Pods-UICollectionView_ExtandableTests/Pods-UICollectionView_ExtandableTests.release.xcconfig"; sourceTree = "<group>"; };
 		BA36F449ABF12FE29538B0EC /* Pods-UICollectionView_ExtandableTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionView_ExtandableTests.debug.xcconfig"; path = "Target Support Files/Pods-UICollectionView_ExtandableTests/Pods-UICollectionView_ExtandableTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E000C291EB7DB7DC447EE0D0 /* Pods-UICollectionView_Extandable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionView_Extandable.release.xcconfig"; path = "Target Support Files/Pods-UICollectionView_Extandable/Pods-UICollectionView_Extandable.release.xcconfig"; sourceTree = "<group>"; };
+		E8878C1628617FD500A25E3C /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 				0973F83A2656B8ED0010A5E4 /* UIView.swift */,
 				090F885F265B7C8F0006A36C /* UICollectionView.swift */,
 				098AD2E0272849F300289F0E /* UIEdgeInsets.swift */,
+				E8878C1628617FD500A25E3C /* Identifiable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8878C1728617FD500A25E3C /* Identifiable.swift in Sources */,
 				098AD2E327284A6F00289F0E /* SupplementaryViewKind.swift in Sources */,
 				0973F7D526569C640010A5E4 /* UICollectionViewExtandCell.xcdatamodeld in Sources */,
 				090F8883265C10D70006A36C /* FlowLayoutMetric.swift in Sources */,
@@ -734,7 +738,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YAHW75YBYW;
+				DEVELOPMENT_TEAM = MMMXXXYWN4;
 				INFOPLIST_FILE = "UICollectionView_Extandable/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -754,7 +758,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YAHW75YBYW;
+				DEVELOPMENT_TEAM = MMMXXXYWN4;
 				INFOPLIST_FILE = "UICollectionView_Extandable/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
