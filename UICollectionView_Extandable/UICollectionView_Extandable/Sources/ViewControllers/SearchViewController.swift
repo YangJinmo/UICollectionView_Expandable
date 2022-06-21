@@ -35,6 +35,8 @@ final class SearchViewController: UIViewController {
     private lazy var collectionView = BaseCollectionView(layout: flowLayout()).then {
         $0.dataSource = self
         $0.delegate = self
+        $0.prefetchDataSource = self
+        $0.isPrefetchingEnabled = true
         $0.register(SearchTitleCell.self)
         $0.register(SearchTermCell.self)
     }
@@ -46,8 +48,6 @@ final class SearchViewController: UIViewController {
 
         setupViews()
     }
-
-    // MARK: - UIViewController Transition Coordinator
 
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
@@ -66,6 +66,22 @@ final class SearchViewController: UIViewController {
             $0.bottom.equalToSuperview()
         }
     }
+
+    private func removeAllCells() {
+        for section in 0 ..< collectionView.numberOfSections {
+            section.description.log()
+
+            let indexPath = IndexPath(item: 0, section: section)
+            removeCell(indexPath: indexPath)
+        }
+    }
+
+    private func removeCell(indexPath: IndexPath) {
+        if let cell = collectionView.cellForItem(at: indexPath) as? SearchTitleCell {
+            cell.removeFromSuperview()
+        }
+        indexPath.description.log()
+    }
 }
 
 // MARK: - UICollectionViewDataSource
@@ -76,24 +92,28 @@ extension SearchViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if searches[section].isExpand == true {
-            return searches[section].terms.count + 1
+        let search = searches[section]
+
+        if search.isExpand {
+            return search.terms.count + 1
         } else {
             return 1
         }
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let search = searches[indexPath.section]
+
         switch indexPath.item {
         case 0:
             let cell: SearchTitleCell = collectionView.dequeueReusableCell(for: indexPath)
-            cell.bind(data: searches[indexPath.section])
+            cell.bind(search: search)
             return cell
         default:
             let cell: SearchTermCell = collectionView.dequeueReusableCell(for: indexPath)
             cell.bind(
                 rank: indexPath.item,
-                term: searches[indexPath.section].terms[indexPath.item - 1]
+                term: search.terms[indexPath.item - 1]
             )
             return cell
         }
@@ -104,14 +124,37 @@ extension SearchViewController: UICollectionViewDataSource {
 
 extension SearchViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if indexPath.item == 0 {
+        switch indexPath.item {
+        case 0:
+            removeCell(indexPath: indexPath)
+
             searches[indexPath.section].isExpand.toggle()
 
-            let sections: IndexSet = IndexSet(integer: indexPath.section)
+            let sections = IndexSet(integer: indexPath.section)
             collectionView.reloadSections(sections)
-        } else {
-            print(searches[indexPath.section].terms[indexPath.item - 1])
+        default:
+            searches[indexPath.section].terms[indexPath.item - 1].log()
         }
+    }
+
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        indexPath.description.log()
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        indexPath.description.log()
+    }
+}
+
+// MARK: - UICollectionViewDataSourcePrefetching
+
+extension SearchViewController: UICollectionViewDataSourcePrefetching {
+    func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
+        indexPaths.description.log()
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cancelPrefetchingForItemsAt indexPaths: [IndexPath]) {
+        indexPaths.description.log()
     }
 }
 
