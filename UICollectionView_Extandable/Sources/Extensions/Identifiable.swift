@@ -2,7 +2,7 @@
 //  Identifiable.swift
 //  UICollectionView_Extandable
 //
-//  Created by JMY on 2022/06/21.
+//  Created by Jmy on 2022/06/21.
 //
 
 import UIKit

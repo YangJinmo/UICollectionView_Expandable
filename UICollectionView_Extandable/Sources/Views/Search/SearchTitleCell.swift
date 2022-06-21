@@ -5,6 +5,8 @@
 //  Created by Jmy on 2021/05/20.
 //
 
+import SnapKit
+import Then
 import UIKit
 
 final class SearchTitleCell: BaseCollectionViewCell {
