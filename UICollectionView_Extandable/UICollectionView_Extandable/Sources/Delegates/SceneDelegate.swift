@@ -18,7 +18,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         window?.windowScene = windowScene
         window?.rootViewController = SearchViewController()
-        window?.backgroundColor = .systemBackground
         window?.makeKeyAndVisible()
     }
 

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,11 +27,10 @@
 		0973F8442656BB1A0010A5E4 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973F8432656BB1A0010A5E4 /* Search.swift */; };
 		098AD2E1272849F300289F0E /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098AD2E0272849F300289F0E /* UIEdgeInsets.swift */; };
 		098AD2E327284A6F00289F0E /* SupplementaryViewKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098AD2E227284A6F00289F0E /* SupplementaryViewKind.swift */; };
-		132C633E29EA4FD07938AFB1 /* Pods_UICollectionView_Extandable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B6E4E1FAA5BBD599A96227 /* Pods_UICollectionView_Extandable.framework */; };
-		848167D06523739AA3D603E8 /* Pods_UICollectionView_Extandable_UICollectionView_ExtandableUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF386383F72E87B71C2C0296 /* Pods_UICollectionView_Extandable_UICollectionView_ExtandableUITests.framework */; };
+		E81FB5092861A08A005FAEF1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E81FB5082861A08A005FAEF1 /* SnapKit */; };
+		E81FB50E2861A0AF005FAEF1 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = E81FB50D2861A0AF005FAEF1 /* Then */; };
 		E8878C1728617FD500A25E3C /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8878C1628617FD500A25E3C /* Identifiable.swift */; };
 		E8878C19286180EE00A25E3C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8878C18286180EE00A25E3C /* String.swift */; };
-		FBBD2310827228D0CCB128C2 /* Pods_UICollectionView_ExtandableTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0EB0820A52A5DC93FA5B3AD /* Pods_UICollectionView_ExtandableTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,21 +77,6 @@
 		0973F8432656BB1A0010A5E4 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		098AD2E0272849F300289F0E /* UIEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; };
 		098AD2E227284A6F00289F0E /* SupplementaryViewKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementaryViewKind.swift; sourceTree = "<group>"; };
-		1A60489601F406643F8EBBF3 /* Pods-UICollectionView_Extandable-UICollectionView_ExtandableUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionView_Extandable-UICollectionView_ExtandableUITests.debug.xcconfig"; path = "Target Support Files/Pods-UICollectionView_Extandable-UICollectionView_ExtandableUITests/Pods-UICollectionView_Extandable-UICollectionView_ExtandableUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		28B6E4E1FAA5BBD599A96227 /* Pods_UICollectionView_Extandable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UICollectionView_Extandable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		28D4F49F1EAA258BB165EB3A /* Pods-UICollectionView_Extandable-UICollectionView_ExtandableUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionView_Extandable-UICollectionView_ExtandableUITests.release.xcconfig"; path = "Target Support Files/Pods-UICollectionView_Extandable-UICollectionView_ExtandableUITests/Pods-UICollectionView_Extandable-UICollectionView_ExtandableUITests.release.xcconfig"; sourceTree = "<group>"; };
-		4EF253C1C3F9DA7210489D0A /* Pods-UICollectionViewExtandCell-UICollectionViewExtandCellUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewExtandCell-UICollectionViewExtandCellUITests.debug.xcconfig"; path = "Target Support Files/Pods-UICollectionViewExtandCell-UICollectionViewExtandCellUITests/Pods-UICollectionViewExtandCell-UICollectionViewExtandCellUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		606131BB6EB5CEFED97C5DD3 /* Pods-UICollectionViewExtandCell-UICollectionViewExtandCellUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewExtandCell-UICollectionViewExtandCellUITests.release.xcconfig"; path = "Target Support Files/Pods-UICollectionViewExtandCell-UICollectionViewExtandCellUITests/Pods-UICollectionViewExtandCell-UICollectionViewExtandCellUITests.release.xcconfig"; sourceTree = "<group>"; };
-		62C58872FEB42D6AAF16E026 /* Pods-UICollectionViewExtandCellTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewExtandCellTests.debug.xcconfig"; path = "Target Support Files/Pods-UICollectionViewExtandCellTests/Pods-UICollectionViewExtandCellTests.debug.xcconfig"; sourceTree = "<group>"; };
-		79855F85CF3F4A94E46E17B6 /* Pods-UICollectionViewExtandCell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewExtandCell.debug.xcconfig"; path = "Target Support Files/Pods-UICollectionViewExtandCell/Pods-UICollectionViewExtandCell.debug.xcconfig"; sourceTree = "<group>"; };
-		830C9B56E0E5D8F14B8523A8 /* Pods-UICollectionView_Extandable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionView_Extandable.debug.xcconfig"; path = "Target Support Files/Pods-UICollectionView_Extandable/Pods-UICollectionView_Extandable.debug.xcconfig"; sourceTree = "<group>"; };
-		9926149145406EF816DF4097 /* Pods-UICollectionViewExtandCellTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewExtandCellTests.release.xcconfig"; path = "Target Support Files/Pods-UICollectionViewExtandCellTests/Pods-UICollectionViewExtandCellTests.release.xcconfig"; sourceTree = "<group>"; };
-		9C5B75B866697D504128F206 /* Pods-UICollectionViewExtandCell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewExtandCell.release.xcconfig"; path = "Target Support Files/Pods-UICollectionViewExtandCell/Pods-UICollectionViewExtandCell.release.xcconfig"; sourceTree = "<group>"; };
-		A0EB0820A52A5DC93FA5B3AD /* Pods_UICollectionView_ExtandableTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UICollectionView_ExtandableTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF386383F72E87B71C2C0296 /* Pods_UICollectionView_Extandable_UICollectionView_ExtandableUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UICollectionView_Extandable_UICollectionView_ExtandableUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B104D9E8408ADC04CCFE733E /* Pods-UICollectionView_ExtandableTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionView_ExtandableTests.release.xcconfig"; path = "Target Support Files/Pods-UICollectionView_ExtandableTests/Pods-UICollectionView_ExtandableTests.release.xcconfig"; sourceTree = "<group>"; };
-		BA36F449ABF12FE29538B0EC /* Pods-UICollectionView_ExtandableTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionView_ExtandableTests.debug.xcconfig"; path = "Target Support Files/Pods-UICollectionView_ExtandableTests/Pods-UICollectionView_ExtandableTests.debug.xcconfig"; sourceTree = "<group>"; };
-		E000C291EB7DB7DC447EE0D0 /* Pods-UICollectionView_Extandable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionView_Extandable.release.xcconfig"; path = "Target Support Files/Pods-UICollectionView_Extandable/Pods-UICollectionView_Extandable.release.xcconfig"; sourceTree = "<group>"; };
 		E8878C1628617FD500A25E3C /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		E8878C18286180EE00A25E3C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,7 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				132C633E29EA4FD07938AFB1 /* Pods_UICollectionView_Extandable.framework in Frameworks */,
+				E81FB5092861A08A005FAEF1 /* SnapKit in Frameworks */,
+				E81FB50E2861A0AF005FAEF1 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +95,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBBD2310827228D0CCB128C2 /* Pods_UICollectionView_ExtandableTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +102,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848167D06523739AA3D603E8 /* Pods_UICollectionView_Extandable_UICollectionView_ExtandableUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,8 +132,6 @@
 				0973F7E326569C670010A5E4 /* UICollectionView_ExtandableTests */,
 				0973F7EE26569C680010A5E4 /* UICollectionView_ExtandableUITests */,
 				0973F7C826569C640010A5E4 /* Products */,
-				533CF65C5B4740E047F2FE9F /* Pods */,
-				E5B2C848A47A79C902597221 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -289,35 +270,6 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		533CF65C5B4740E047F2FE9F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				79855F85CF3F4A94E46E17B6 /* Pods-UICollectionViewExtandCell.debug.xcconfig */,
-				9C5B75B866697D504128F206 /* Pods-UICollectionViewExtandCell.release.xcconfig */,
-				4EF253C1C3F9DA7210489D0A /* Pods-UICollectionViewExtandCell-UICollectionViewExtandCellUITests.debug.xcconfig */,
-				606131BB6EB5CEFED97C5DD3 /* Pods-UICollectionViewExtandCell-UICollectionViewExtandCellUITests.release.xcconfig */,
-				62C58872FEB42D6AAF16E026 /* Pods-UICollectionViewExtandCellTests.debug.xcconfig */,
-				9926149145406EF816DF4097 /* Pods-UICollectionViewExtandCellTests.release.xcconfig */,
-				830C9B56E0E5D8F14B8523A8 /* Pods-UICollectionView_Extandable.debug.xcconfig */,
-				E000C291EB7DB7DC447EE0D0 /* Pods-UICollectionView_Extandable.release.xcconfig */,
-				1A60489601F406643F8EBBF3 /* Pods-UICollectionView_Extandable-UICollectionView_ExtandableUITests.debug.xcconfig */,
-				28D4F49F1EAA258BB165EB3A /* Pods-UICollectionView_Extandable-UICollectionView_ExtandableUITests.release.xcconfig */,
-				BA36F449ABF12FE29538B0EC /* Pods-UICollectionView_ExtandableTests.debug.xcconfig */,
-				B104D9E8408ADC04CCFE733E /* Pods-UICollectionView_ExtandableTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		E5B2C848A47A79C902597221 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				28B6E4E1FAA5BBD599A96227 /* Pods_UICollectionView_Extandable.framework */,
-				AF386383F72E87B71C2C0296 /* Pods_UICollectionView_Extandable_UICollectionView_ExtandableUITests.framework */,
-				A0EB0820A52A5DC93FA5B3AD /* Pods_UICollectionView_ExtandableTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -325,17 +277,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0973F7F426569C680010A5E4 /* Build configuration list for PBXNativeTarget "UICollectionView_Extandable" */;
 			buildPhases = (
-				3A8FCCCF7F11F9223084EAC8 /* [CP] Check Pods Manifest.lock */,
 				0973F7C326569C640010A5E4 /* Sources */,
 				0973F7C426569C640010A5E4 /* Frameworks */,
 				0973F7C526569C640010A5E4 /* Resources */,
-				F39AE8991F0C2AE3EBEE4E80 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = UICollectionView_Extandable;
+			packageProductDependencies = (
+				E81FB5082861A08A005FAEF1 /* SnapKit */,
+				E81FB50D2861A0AF005FAEF1 /* Then */,
+			);
 			productName = UICollectionViewExtandCell;
 			productReference = 0973F7C726569C640010A5E4 /* UICollectionView_Extandable.app */;
 			productType = "com.apple.product-type.application";
@@ -344,7 +298,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0973F7F726569C680010A5E4 /* Build configuration list for PBXNativeTarget "UICollectionView_ExtandableTests" */;
 			buildPhases = (
-				5034FD40DDCC275E882AAB09 /* [CP] Check Pods Manifest.lock */,
 				0973F7DC26569C670010A5E4 /* Sources */,
 				0973F7DD26569C670010A5E4 /* Frameworks */,
 				0973F7DE26569C670010A5E4 /* Resources */,
@@ -363,11 +316,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0973F7FA26569C680010A5E4 /* Build configuration list for PBXNativeTarget "UICollectionView_ExtandableUITests" */;
 			buildPhases = (
-				CE6A6162BFAE68D6F56415A2 /* [CP] Check Pods Manifest.lock */,
 				0973F7E726569C680010A5E4 /* Sources */,
 				0973F7E826569C680010A5E4 /* Frameworks */,
 				0973F7E926569C680010A5E4 /* Resources */,
-				0BA10EEC38B338FA6BEC3973 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -410,6 +361,10 @@
 				Base,
 			);
 			mainGroup = 0973F7BE26569C640010A5E4;
+			packageReferences = (
+				E81FB5072861A08A005FAEF1 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				E81FB50C2861A0AF005FAEF1 /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = 0973F7C826569C640010A5E4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -446,109 +401,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0BA10EEC38B338FA6BEC3973 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UICollectionView_Extandable-UICollectionView_ExtandableUITests/Pods-UICollectionView_Extandable-UICollectionView_ExtandableUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UICollectionView_Extandable-UICollectionView_ExtandableUITests/Pods-UICollectionView_Extandable-UICollectionView_ExtandableUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UICollectionView_Extandable-UICollectionView_ExtandableUITests/Pods-UICollectionView_Extandable-UICollectionView_ExtandableUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3A8FCCCF7F11F9223084EAC8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-UICollectionView_Extandable-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5034FD40DDCC275E882AAB09 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-UICollectionView_ExtandableTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CE6A6162BFAE68D6F56415A2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-UICollectionView_Extandable-UICollectionView_ExtandableUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F39AE8991F0C2AE3EBEE4E80 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UICollectionView_Extandable/Pods-UICollectionView_Extandable-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UICollectionView_Extandable/Pods-UICollectionView_Extandable-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UICollectionView_Extandable/Pods-UICollectionView_Extandable-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0973F7C326569C640010A5E4 /* Sources */ = {
@@ -737,7 +589,6 @@
 		};
 		0973F7F526569C680010A5E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 830C9B56E0E5D8F14B8523A8 /* Pods-UICollectionView_Extandable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -757,7 +608,6 @@
 		};
 		0973F7F626569C680010A5E4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E000C291EB7DB7DC447EE0D0 /* Pods-UICollectionView_Extandable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -777,7 +627,6 @@
 		};
 		0973F7F826569C680010A5E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA36F449ABF12FE29538B0EC /* Pods-UICollectionView_ExtandableTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -800,7 +649,6 @@
 		};
 		0973F7F926569C680010A5E4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B104D9E8408ADC04CCFE733E /* Pods-UICollectionView_ExtandableTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -823,7 +671,6 @@
 		};
 		0973F7FB26569C680010A5E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A60489601F406643F8EBBF3 /* Pods-UICollectionView_Extandable-UICollectionView_ExtandableUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -844,7 +691,6 @@
 		};
 		0973F7FC26569C680010A5E4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28D4F49F1EAA258BB165EB3A /* Pods-UICollectionView_Extandable-UICollectionView_ExtandableUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -903,6 +749,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E81FB5072861A08A005FAEF1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		E81FB50C2861A0AF005FAEF1 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E81FB5082861A08A005FAEF1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E81FB5072861A08A005FAEF1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		E81FB50D2861A0AF005FAEF1 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E81FB50C2861A0AF005FAEF1 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		0973F7D326569C640010A5E4 /* UICollectionViewExtandCell.xcdatamodeld */ = {
