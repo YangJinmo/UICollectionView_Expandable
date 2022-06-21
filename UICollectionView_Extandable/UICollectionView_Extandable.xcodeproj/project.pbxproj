@@ -30,6 +30,7 @@
 		132C633E29EA4FD07938AFB1 /* Pods_UICollectionView_Extandable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B6E4E1FAA5BBD599A96227 /* Pods_UICollectionView_Extandable.framework */; };
 		848167D06523739AA3D603E8 /* Pods_UICollectionView_Extandable_UICollectionView_ExtandableUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF386383F72E87B71C2C0296 /* Pods_UICollectionView_Extandable_UICollectionView_ExtandableUITests.framework */; };
 		E8878C1728617FD500A25E3C /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8878C1628617FD500A25E3C /* Identifiable.swift */; };
+		E8878C19286180EE00A25E3C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8878C18286180EE00A25E3C /* String.swift */; };
 		FBBD2310827228D0CCB128C2 /* Pods_UICollectionView_ExtandableTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0EB0820A52A5DC93FA5B3AD /* Pods_UICollectionView_ExtandableTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,7 @@
 		BA36F449ABF12FE29538B0EC /* Pods-UICollectionView_ExtandableTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionView_ExtandableTests.debug.xcconfig"; path = "Target Support Files/Pods-UICollectionView_ExtandableTests/Pods-UICollectionView_ExtandableTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E000C291EB7DB7DC447EE0D0 /* Pods-UICollectionView_Extandable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionView_Extandable.release.xcconfig"; path = "Target Support Files/Pods-UICollectionView_Extandable/Pods-UICollectionView_Extandable.release.xcconfig"; sourceTree = "<group>"; };
 		E8878C1628617FD500A25E3C /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		E8878C18286180EE00A25E3C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 				090F885F265B7C8F0006A36C /* UICollectionView.swift */,
 				098AD2E0272849F300289F0E /* UIEdgeInsets.swift */,
 				E8878C1628617FD500A25E3C /* Identifiable.swift */,
+				E8878C18286180EE00A25E3C /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -564,6 +567,7 @@
 				0973F7CF26569C640010A5E4 /* SearchViewController.swift in Sources */,
 				0973F80F2656AD110010A5E4 /* SearchTitleCell.swift in Sources */,
 				0973F7CB26569C640010A5E4 /* AppDelegate.swift in Sources */,
+				E8878C19286180EE00A25E3C /* String.swift in Sources */,
 				0973F8442656BB1A0010A5E4 /* Search.swift in Sources */,
 				098AD2E1272849F300289F0E /* UIEdgeInsets.swift in Sources */,
 				0973F7CD26569C640010A5E4 /* SceneDelegate.swift in Sources */,
