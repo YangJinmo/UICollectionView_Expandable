@@ -19,9 +19,8 @@ final class SearchTitleCell: BaseCollectionViewCell {
 
     // MARK: - Variables
 
-    private var timer: Timer = Timer()
-    private var isTimerOn: Bool = false
-    private var index: Int = 0
+    private var timer: Timer?
+    private var index = 0
 
     // MARK: - Views
 
@@ -41,6 +40,38 @@ final class SearchTitleCell: BaseCollectionViewCell {
     }
 
     private let dividerView = DividerView()
+
+    // MARK: - View Life Cycle
+
+    override class func awakeFromNib() {
+        super.awakeFromNib()
+
+        "".log()
+    }
+
+    override func prepareForReuse() {
+        super.prepareForReuse()
+
+        "".log()
+    }
+
+    override func layoutSubviews() {
+        super.layoutSubviews()
+
+        "".log()
+    }
+
+    override func removeFromSuperview() {
+        removeTimer()
+
+        super.removeFromSuperview()
+
+        "".log()
+    }
+
+    deinit {
+        Self.identifier.log()
+    }
 
     // MARK: - Methods
 
@@ -74,33 +105,48 @@ final class SearchTitleCell: BaseCollectionViewCell {
     // MARK: - Methods
 
     // TODO: Add Timer in model
-    func bind(data: Search) {
-        chevronButton.isSelected = data.isExpand
-        titleLabel.text = data.title
-        titleLabel.isHidden = data.isExpand
+    public func bind(search: Search) {
+        search.isExpand.description.log()
 
-        if data.isExpand == true {
-            timer.invalidate()
+        chevronButton.isSelected = search.isExpand
+        titleLabel.text = search.title
+        titleLabel.isHidden = search.isExpand
+
+        if search.isExpand {
+            removeTimer()
             index = 0
-            isTimerOn = false
-            termLabel.text = data.title
+            termLabel.text = search.title
         } else {
-            termLabel.text = "\(index + 1). \(data.terms[index])" // Default
-
-            if isTimerOn == false {
-                isTimerOn = true
-                timer = Timer.scheduledTimer(
-                    withTimeInterval: 2,
-                    repeats: true,
-                    block: { _ in
-                        self.termLabel.text = "\(self.index + 1). \(data.terms[self.index])"
-                        self.index += 1
-                        if self.index == data.terms.count {
-                            self.index = 0
-                        }
-                    }
-                )
-            }
+            createTimer(search: search)
         }
+    }
+
+    private func setTermLabelText(search: Search, index: Int) {
+        termLabel.text = "\(index + 1). \(search.terms[index])"
+        "\(index + 1). \(search.terms[index])".log()
+    }
+
+    private func createTimer(search: Search) {
+        removeTimer()
+
+        setTermLabelText(search: search, index: index) // Default
+
+        timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(update), userInfo: search, repeats: true)
+    }
+
+    @objc private func update(_ timer: Timer) {
+        guard let search = timer.userInfo as? Search else { return }
+
+        setTermLabelText(search: search, index: index)
+        index += 1
+
+        if index == search.terms.count {
+            index = 0
+        }
+    }
+
+    public func removeTimer() {
+        timer?.invalidate()
+        timer = nil
     }
 }
