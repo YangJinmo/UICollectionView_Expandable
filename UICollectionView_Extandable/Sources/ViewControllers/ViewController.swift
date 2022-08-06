@@ -30,6 +30,8 @@ final class ViewController: UIViewController {
     // MARK: - Methods
 
     private func setupViews() {
+        view.backgroundColor = .systemBackground
+
         view.addSubview(presentButton)
 
         presentButton.snp.makeConstraints { make in
