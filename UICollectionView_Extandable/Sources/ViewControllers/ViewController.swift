@@ -41,8 +41,6 @@ final class ViewController: UIViewController {
 
     @objc private func presentButtonTouched(_ sender: Any) {
         let rootViewController = SearchViewController()
-        let navigationController = UINavigationController(rootViewController: rootViewController)
-        navigationController.isNavigationBarHidden = true
-        present(navigationController, animated: true)
+        presentWithNavigationController(rootViewController)
     }
 }

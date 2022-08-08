@@ -9,7 +9,7 @@ import SnapKit
 import Then
 import UIKit
 
-final class SearchViewController: UIViewController {
+final class SearchViewController: BaseTabViewController {
     // MARK: - Variables
 
     private var searches: [Search] = [
@@ -43,10 +43,20 @@ final class SearchViewController: UIViewController {
 
     // MARK: - View Life Cycle
 
+    override convenience init() {
+        self.init(title: "추천 검색어")
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupViews()
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+
+        removeAllCells()
     }
 
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
@@ -59,11 +69,10 @@ final class SearchViewController: UIViewController {
     // MARK: - Methods
 
     private func setupViews() {
-        view.addSubview(collectionView)
+        contentView.addSubview(collectionView)
 
         collectionView.snp.makeConstraints {
-            $0.top.left.right.equalTo(view.safeAreaLayoutGuide)
-            $0.bottom.equalToSuperview()
+            $0.edges.equalToSuperview()
         }
     }
 

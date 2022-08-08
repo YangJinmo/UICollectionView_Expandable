@@ -26,22 +26,22 @@ final class SearchTitleCell: BaseCollectionViewCell {
 
     // MARK: - Views
 
-    private let titleLabel = UILabel().then {
+    private lazy var titleLabel = UILabel().then {
         $0.font = .systemFont(ofSize: 16, weight: .bold)
     }
 
-    private let termLabel = UILabel().then {
+    private lazy var termLabel = UILabel().then {
         $0.font = .systemFont(ofSize: 16, weight: .bold)
     }
 
-    private let chevronButton = UIButton().then {
+    private lazy var chevronButton = UIButton().then {
         $0.setImage(Image.chevronDownImage, for: .normal)
         $0.setImage(Image.chevronUpImage, for: .selected)
         $0.tintColor = .label
         $0.isUserInteractionEnabled = false
     }
 
-    private let dividerView = DividerView()
+    private lazy var dividerView = DividerView()
 
     // MARK: - View Life Cycle
 
@@ -77,7 +77,7 @@ final class SearchTitleCell: BaseCollectionViewCell {
 
     // MARK: - Methods
 
-    override func setupViews() {
+    override func commonInit() {
         contentView.addSubviews(
             titleLabel,
             termLabel,

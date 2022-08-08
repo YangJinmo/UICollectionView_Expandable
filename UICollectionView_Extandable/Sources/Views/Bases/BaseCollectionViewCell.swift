@@ -17,15 +17,17 @@ class BaseCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        setupViews()
+        commonInit()
     }
 
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
+
+        commonInit()
     }
 
     // MARK: - Methods
 
-    func setupViews() {
+    func commonInit() {
     }
 }

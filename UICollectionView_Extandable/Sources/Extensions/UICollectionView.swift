@@ -8,6 +8,10 @@
 import UIKit
 
 extension UICollectionView {
+    convenience init(layout: UICollectionViewLayout) {
+        self.init(frame: .zero, collectionViewLayout: layout)
+    }
+
     // MARK: - Register UICollectionViewCell
 
     func register<T: UICollectionViewCell>(_ cellClass: T.Type) {

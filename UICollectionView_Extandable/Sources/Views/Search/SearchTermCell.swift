@@ -5,6 +5,8 @@
 //  Created by Jmy on 2021/05/20.
 //
 
+import SnapKit
+import Then
 import UIKit
 
 final class SearchTermCell: BaseCollectionViewCell {
@@ -20,7 +22,7 @@ final class SearchTermCell: BaseCollectionViewCell {
 
     // MARK: - Methods
 
-    override func setupViews() {
+    override func commonInit() {
         contentView.addSubviews(
             rankTermLabel
         )

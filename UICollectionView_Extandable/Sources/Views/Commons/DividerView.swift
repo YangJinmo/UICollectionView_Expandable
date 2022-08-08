@@ -10,7 +10,7 @@ import UIKit
 class DividerView: BaseView {
     // MARK: - Methods
 
-    override func setupViews() {
+    override func commonInit() {
         backgroundColor = .secondarySystemBackground
 
         translatesAutoresizingMaskIntoConstraints = false
