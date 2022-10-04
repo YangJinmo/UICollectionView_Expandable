@@ -42,6 +42,7 @@
 		E8DF0E95289F55D200AF01AD /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF0E94289F55D200AF01AD /* Typealias.swift */; };
 		E8DF0E9728A09F3900AF01AD /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF0E9628A09F3900AF01AD /* UIFont.swift */; };
 		E8DF0E9928A0A0F300AF01AD /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF0E9828A0A0F300AF01AD /* UIButton.swift */; };
+		E8EDEE2428EBEE0500526C4D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EDEE2328EBEE0500526C4D /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		E8DF0E94289F55D200AF01AD /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		E8DF0E9628A09F3900AF01AD /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		E8DF0E9828A0A0F300AF01AD /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		E8EDEE2328EBEE0500526C4D /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,17 +220,18 @@
 		0973F8342656B44C0010A5E4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				0973F83A2656B8ED0010A5E4 /* UIView.swift */,
-				090F885F265B7C8F0006A36C /* UICollectionView.swift */,
-				098AD2E0272849F300289F0E /* UIEdgeInsets.swift */,
-				E8878C1628617FD500A25E3C /* Identifiable.swift */,
-				E8878C18286180EE00A25E3C /* String.swift */,
 				E8DF0E84289E98DE00AF01AD /* UIViewController.swift */,
-				E8DF0E89289EA26200AF01AD /* UILabel.swift */,
+				090F885F265B7C8F0006A36C /* UICollectionView.swift */,
 				E8DF0E8B289EA2BD00AF01AD /* UIStackView.swift */,
 				E8DF0E8D289EA2E000AF01AD /* UIScrollView.swift */,
-				E8DF0E9628A09F3900AF01AD /* UIFont.swift */,
+				098AD2E0272849F300289F0E /* UIEdgeInsets.swift */,
+				0973F83A2656B8ED0010A5E4 /* UIView.swift */,
 				E8DF0E9828A0A0F300AF01AD /* UIButton.swift */,
+				E8DF0E89289EA26200AF01AD /* UILabel.swift */,
+				E8DF0E9628A09F3900AF01AD /* UIFont.swift */,
+				E8878C1628617FD500A25E3C /* Identifiable.swift */,
+				E8878C18286180EE00A25E3C /* String.swift */,
+				E8EDEE2328EBEE0500526C4D /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8DF0E88289EA22B00AF01AD /* BaseTabViewController.swift in Sources */,
+				E8EDEE2428EBEE0500526C4D /* Date.swift in Sources */,
 				E8DF0E95289F55D200AF01AD /* Typealias.swift in Sources */,
 				E8878C1728617FD500A25E3C /* Identifiable.swift in Sources */,
 				E81FB5162861A39E005FAEF1 /* ViewController.swift in Sources */,
