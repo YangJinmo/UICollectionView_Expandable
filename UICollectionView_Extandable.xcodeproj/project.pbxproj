@@ -211,6 +211,7 @@
 		0973F82B2656B4060010A5E4 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				E8878C1628617FD500A25E3C /* Identifiable.swift */,
 				090F8882265C10D70006A36C /* FlowLayoutMetric.swift */,
 				098AD2E227284A6F00289F0E /* SupplementaryViewKind.swift */,
 			);
@@ -229,7 +230,6 @@
 				E8DF0E9828A0A0F300AF01AD /* UIButton.swift */,
 				E8DF0E89289EA26200AF01AD /* UILabel.swift */,
 				E8DF0E9628A09F3900AF01AD /* UIFont.swift */,
-				E8878C1628617FD500A25E3C /* Identifiable.swift */,
 				E8878C18286180EE00A25E3C /* String.swift */,
 				E8EDEE2328EBEE0500526C4D /* Date.swift */,
 			);
