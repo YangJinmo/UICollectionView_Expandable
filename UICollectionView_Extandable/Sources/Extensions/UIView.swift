@@ -9,7 +9,11 @@ import UIKit
 
 extension UIView {
     var navigationBarHeight: CGFloat {
-        return 56
+        return 44
+    }
+
+    var tabBarHeight: CGFloat {
+        return 49
     }
 
     func addSubviews(_ views: UIView...) {
