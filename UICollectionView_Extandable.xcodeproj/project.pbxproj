@@ -30,6 +30,7 @@
 		E81FB5112861A2F9005FAEF1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E81FB5102861A2F9005FAEF1 /* SnapKit */; };
 		E81FB5142861A335005FAEF1 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = E81FB5132861A335005FAEF1 /* Then */; };
 		E81FB5162861A39E005FAEF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81FB5152861A39E005FAEF1 /* ViewController.swift */; };
+		E81FF56F294EE5A7005519BD /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81FF56E294EE5A7005519BD /* TabBarController.swift */; };
 		E8878C1728617FD500A25E3C /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8878C1628617FD500A25E3C /* Identifiable.swift */; };
 		E8878C19286180EE00A25E3C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8878C18286180EE00A25E3C /* String.swift */; };
 		E8DF0E85289E98DE00AF01AD /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DF0E84289E98DE00AF01AD /* UIViewController.swift */; };
@@ -90,6 +91,7 @@
 		098AD2E0272849F300289F0E /* UIEdgeInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; };
 		098AD2E227284A6F00289F0E /* SupplementaryViewKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementaryViewKind.swift; sourceTree = "<group>"; };
 		E81FB5152861A39E005FAEF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E81FF56E294EE5A7005519BD /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E8878C1628617FD500A25E3C /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		E8878C18286180EE00A25E3C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		E8DF0E84289E98DE00AF01AD /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				E8DF0E86289EA21F00AF01AD /* Bases */,
+				E81FF56E294EE5A7005519BD /* TabBarController.swift */,
 				E81FB5152861A39E005FAEF1 /* ViewController.swift */,
 				0973F7CE26569C640010A5E4 /* SearchViewController.swift */,
 			);
@@ -476,6 +479,7 @@
 				0973F83B2656B8ED0010A5E4 /* UIView.swift in Sources */,
 				0973F8192656AD3F0010A5E4 /* BaseCollectionViewCell.swift in Sources */,
 				0973F7CF26569C640010A5E4 /* SearchViewController.swift in Sources */,
+				E81FF56F294EE5A7005519BD /* TabBarController.swift in Sources */,
 				0973F80F2656AD110010A5E4 /* SearchTitleCell.swift in Sources */,
 				0973F7CB26569C640010A5E4 /* AppDelegate.swift in Sources */,
 				E8DF0E8A289EA26200AF01AD /* UILabel.swift in Sources */,
