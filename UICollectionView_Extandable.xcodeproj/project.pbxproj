@@ -288,7 +288,7 @@
 			children = (
 				E8DF0E93289F55BF00AF01AD /* Defines */,
 				0973F8402656B9D40010A5E4 /* Delegates */,
-				098AD2E427284B0400289F0E /* ViewControllers */,
+				098AD2E427284B0400289F0E /* Controllers */,
 				0973F84C2656BBA80010A5E4 /* Views */,
 				0973F8422656BB0B0010A5E4 /* Models */,
 				0973F82B2656B4060010A5E4 /* Commons */,
@@ -297,7 +297,7 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		098AD2E427284B0400289F0E /* ViewControllers */ = {
+		098AD2E427284B0400289F0E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				E8DF0E86289EA21F00AF01AD /* Bases */,
@@ -305,7 +305,7 @@
 				E81FB5152861A39E005FAEF1 /* ViewController.swift */,
 				0973F7CE26569C640010A5E4 /* SearchViewController.swift */,
 			);
-			path = ViewControllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		E8DF0E86289EA21F00AF01AD /* Bases */ = {
